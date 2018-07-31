@@ -6,5 +6,10 @@ pipeline {
         echo 'creazione di jenksuccio'
       }
     }
+    stage('compilazione del codice') {
+      steps {
+        bat './mvnw spring-boot:run'
+      }
+    }
   }
 }
