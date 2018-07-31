@@ -4,9 +4,6 @@ pipeline {
     stage('creazioneJenkinfile') {
       steps {
         echo 'creazione di jenksuccio'
-        sh '''#!bash
-
-./mvnw spring-boot:run'''
       }
     }
   }
